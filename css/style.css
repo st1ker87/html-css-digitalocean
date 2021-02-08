@@ -34,12 +34,19 @@
 }
 
 /* FONT */
+body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
 .ms_small_font {
   font-size: 0.9em;
 }
 
 .ms_m_font {
   font-size: 1.5em;
+}
+
+.ms_l_font {
+  font-size: 3em;
 }
 
 .ms_xxl_font {
@@ -53,7 +60,6 @@
 /* BUTTON */
 .ms_btn_white {
   background-color: white;
-  color: #0F6CFA;
   border: 1px solid #0F6CFA;
   transition-duration: 0.5s;
   cursor: pointer;
@@ -62,6 +68,23 @@
   background-color: #0F6CFA;
   color: white;
 }
+
+.ms_btn_blue {
+  border-style: none;
+  color: white;
+  background-color: #5999FB;
+}
+.ms_btn_blue:hover {
+  background-color: #0F6CFA;
+  color: white;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.ms_btn_form {
+  width: 100%;
+}
+
 /* GENERAL */
 section {
   padding: 50px 0;
@@ -79,8 +102,9 @@ section {
 }
 
 .ms_nav_center {
-  margin-left: 80px;
+  /* margin-left: 80px; */
 }
+
 
 /* JUMBOTRON */
 #jumbo {
@@ -92,7 +116,7 @@ section {
 }
 
 .ms_form_white {
-  padding: 30px 10px;
+  padding: 30px 20px;
   background-color: white;
   border-radius: 5px;
 }
@@ -102,4 +126,29 @@ section {
 
 .ms_jumbo_text {
   color: #C7D7FD;
+}
+
+form .btn {
+  margin-bottom: 15px;
+}
+
+form .btn img {
+  height: 1.5em;
+}
+
+
+.ms_img_abs {
+  float: left;
+}
+
+/* PARTNER */
+
+@media screen and (max-width: 991px) {
+  /* JUMBOTRON */
+  .ms_l_font {
+    font-size: 2.5em;
+  }
+  .ms_m_font {
+    font-size: 2em;
+  }
 }
